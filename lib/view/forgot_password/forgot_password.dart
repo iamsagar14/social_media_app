@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tech_media/view_model/forgot_password/forgot_password_controller.dart';
+import 'package:social_media_app/view_model/forgot_password/forgot_password_controller.dart';
 
 import '../../res/components/input_text_field.dart';
 import '../../res/components/round_button.dart';

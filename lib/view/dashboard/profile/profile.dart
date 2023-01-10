@@ -3,9 +3,9 @@ import 'dart:io';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tech_media/res/color.dart';
-import 'package:tech_media/utils/routes/route_name.dart';
-import 'package:tech_media/view_model/services/session_manager.dart';
+import 'package:social_media_app/res/color.dart';
+import 'package:social_media_app/utils/routes/route_name.dart';
+import 'package:social_media_app/view_model/services/session_manager.dart';
 
 import '../../../res/components/round_button.dart';
 import '../../../view_model/profile/profile_controller.dart';
@@ -104,7 +104,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                                     Image.file(File(provider
                                                             .image!.path)
                                                         .absolute),
-                                                    Center(
+                                                    const Center(
                                                         child:
                                                             CircularProgressIndicator())
                                                   ],
@@ -119,8 +119,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     },
                                     child: const CircleAvatar(
                                       radius: 14,
-                                      backgroundColor:
-                                          AppColors.primaryIconColor,
+                                      backgroundColor: AppColors.lightBlue,
                                       child: Icon(
                                         Icons.add,
                                         color: Colors.white,
@@ -169,13 +168,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 ),
                               ),
                               const SizedBox(
-                                height: 20.0,
+                                height: 30.0,
                               ),
                               RoundButton(
                                 title: 'Log out',
                                 onPress: () {
                                   Navigator.pushNamed(
-                                      context, RouteName.loginView);
+                                      context, RouteName.signupView);
                                 },
                               )
                             ],

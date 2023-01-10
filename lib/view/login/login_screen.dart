@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tech_media/res/components/round_button.dart';
-import 'package:tech_media/utils/routes/route_name.dart';
-import 'package:tech_media/view_model/login/login_controller.dart';
+import 'package:social_media_app/res/color.dart';
+import 'package:social_media_app/res/components/round_button.dart';
+import 'package:social_media_app/utils/routes/route_name.dart';
+import 'package:social_media_app/view_model/login/login_controller.dart';
 
 import '../../res/components/input_text_field.dart';
 
@@ -54,7 +55,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 Text(
                   'Enter your Email address \n to connect to your account  ',
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.subtitle1,
+                  style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.w500,
+                      color: AppColors.lightBlue),
                 ),
                 SizedBox(
                   height: height * .01,
@@ -74,11 +78,11 @@ class _LoginScreenState extends State<LoginScreen> {
                             return value.isEmpty ? 'enter email' : null;
                           },
                           keyBoardType: TextInputType.emailAddress,
-                          hint: 'Enter Email',
+                          hint: 'Enter email',
                           obscureText: false,
                         ),
                         SizedBox(
-                          height: height * 0.01,
+                          height: height * 0.03,
                         ),
                         InputTextField(
                           myController: passwordController,
@@ -95,6 +99,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: height * 0.01,
+                ),
                 Align(
                   alignment: Alignment.centerRight,
                   child: InkWell(
@@ -104,19 +111,21 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Text(
                       "Forgot Password ?",
                       style: Theme.of(context).textTheme.subtitle1!.copyWith(
-                          fontSize: 15, decoration: TextDecoration.underline),
+                          color: AppColors.lightBlue,
+                          fontSize: 17,
+                          decoration: TextDecoration.underline),
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 40.0,
+                  height: 60.0,
                 ),
                 ChangeNotifierProvider(
                   create: (context) => LogInController(),
                   child: Consumer<LogInController>(
                     builder: (context, provider, child) {
                       return RoundButton(
-                        title: 'login',
+                        title: 'log in',
                         loading: provider.loading,
                         onPress: () {
                           if (_formKey.currentState!.validate()) {
@@ -149,7 +158,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                 .textTheme
                                 .headline2!
                                 .copyWith(
-                                    fontSize: 15,
+                                    fontSize: 20,
+                                    color: AppColors.lightBlue,
                                     decoration: TextDecoration.underline),
                           )
                         ]),

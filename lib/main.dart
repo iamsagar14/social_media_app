@@ -1,10 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:tech_media/res/color.dart';
-import 'package:tech_media/res/fonts.dart';
-import 'package:tech_media/utils/routes/route_name.dart';
-import 'package:tech_media/utils/routes/routes.dart';
-import 'package:tech_media/view/splash/splash_screen.dart';
+import 'package:social_media_app/res/color.dart';
+import 'package:social_media_app/res/fonts.dart';
+import 'package:social_media_app/utils/routes/route_name.dart';
+import 'package:social_media_app/utils/routes/routes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,10 +46,10 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.w500,
               height: 1.6),
           headline3: TextStyle(
-              fontSize: 28,
+              fontSize: 40,
               fontFamily: AppFonts.sfProDisplayMedium,
               color: AppColors.primaryTextTextColor,
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.w700,
               height: 1.9),
           headline4: TextStyle(
               fontSize: 24,

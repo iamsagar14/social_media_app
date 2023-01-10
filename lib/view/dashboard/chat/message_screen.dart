@@ -1,8 +1,8 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:tech_media/res/color.dart';
-import 'package:tech_media/utils/utlis.dart';
-import 'package:tech_media/view_model/services/session_manager.dart';
+import 'package:social_media_app/res/color.dart';
+import 'package:social_media_app/utils/utlis.dart';
+import 'package:social_media_app/view_model/services/session_manager.dart';
 
 class MessageScreen extends StatefulWidget {
   final String image, name, email, receiverId;
@@ -60,7 +60,7 @@ class _MessageScreenState extends State<MessageScreen> {
                           child: const Padding(
                             padding: EdgeInsets.only(right: 15.0),
                             child: CircleAvatar(
-                              backgroundColor: AppColors.primaryIconColor,
+                              backgroundColor: AppColors.lightBlue,
                               child: Icon(
                                 Icons.send,
                                 color: Colors.white,

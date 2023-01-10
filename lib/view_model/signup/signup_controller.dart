@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:tech_media/utils/routes/route_name.dart';
-import 'package:tech_media/utils/utlis.dart';
+import 'package:social_media_app/utils/routes/route_name.dart';
+import 'package:social_media_app/utils/utlis.dart';
 
 import '../services/session_manager.dart';
 

@@ -4,7 +4,7 @@ class AppColors {
   static const Color primaryColor = Color(0xff58ee4a);
   static const Color secondaryColor = Color.fromRGBO(19, 103, 33, 1);
   static const Color lightBlueAccent = Color(0xffADD8E6);
-  static const Color lightBlue = Color(0xff3cdfff);
+  static const Color lightBlue = Color(0xff311E69);
 
   static const Color primaryTextTextColor = Color(0xff242424);
   static const Color secondaryTextColor = Color(0xff8F92A1);

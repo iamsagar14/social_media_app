@@ -4,10 +4,10 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:tech_media/res/color.dart';
-import 'package:tech_media/res/components/input_text_field.dart';
-import 'package:tech_media/utils/utlis.dart';
-import 'package:tech_media/view_model/services/session_manager.dart';
+import 'package:social_media_app/res/color.dart';
+import 'package:social_media_app/res/components/input_text_field.dart';
+import 'package:social_media_app/utils/utlis.dart';
+import 'package:social_media_app/view_model/services/session_manager.dart';
 
 class ProfileController with ChangeNotifier {
   final nameController = TextEditingController();

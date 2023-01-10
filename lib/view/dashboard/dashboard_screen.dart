@@ -2,9 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:tech_media/res/color.dart';
-import 'package:tech_media/view/dashboard/profile/profile.dart';
-import 'package:tech_media/view/dashboard/user/user_list_screen.dart';
+import 'package:social_media_app/res/color.dart';
+import 'package:social_media_app/view/dashboard/profile/profile.dart';
+import 'package:social_media_app/view/dashboard/user/user_list_screen.dart';
 
 class DashBoardScreen extends StatefulWidget {
   const DashBoardScreen({Key? key}) : super(key: key);
@@ -31,38 +31,51 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
       PersistentBottomNavBarItem(
         icon: const Icon(
           Icons.home,
+          color: AppColors.lightBlue,
         ),
         inactiveIcon: const Icon(
           Icons.home,
-          color: AppColors.lightBlue,
+          color: Colors.white,
         ),
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.message),
-        inactiveIcon: const Icon(
+        icon: const Icon(
           Icons.message,
           color: AppColors.lightBlue,
         ),
+        inactiveIcon: const Icon(
+          Icons.message,
+          color: Colors.white,
+        ),
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.add),
-        inactiveIcon: const Icon(
+        icon: const Icon(
           Icons.add,
           color: AppColors.lightBlue,
         ),
-      ),
-      PersistentBottomNavBarItem(
-        icon: const Icon(Icons.list),
         inactiveIcon: const Icon(
-          Icons.list,
-          color: AppColors.lightBlue,
+          Icons.add,
+          color: Colors.white,
         ),
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.person),
+        icon: const Icon(
+          Icons.list,
+          color: AppColors.lightBlue,
+        ),
         inactiveIcon: const Icon(
+          Icons.list,
+          color: Colors.white,
+        ),
+      ),
+      PersistentBottomNavBarItem(
+        icon: const Icon(
           Icons.person,
           color: AppColors.lightBlue,
+        ),
+        inactiveIcon: const Icon(
+          Icons.person,
+          color: Colors.white,
         ),
       ),
     ];

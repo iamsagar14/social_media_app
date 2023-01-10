@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tech_media/res/fonts.dart';
-import 'package:tech_media/view_model/services/splash_services.dart';
+import 'package:social_media_app/res/fonts.dart';
+import 'package:social_media_app/view_model/services/splash_services.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

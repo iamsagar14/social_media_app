@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:tech_media/res/color.dart';
+import 'package:social_media_app/res/color.dart';
 
 class Utils {
   static void fieldFocus(

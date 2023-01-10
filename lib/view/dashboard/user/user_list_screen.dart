@@ -2,9 +2,9 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:tech_media/res/color.dart';
-import 'package:tech_media/view/dashboard/chat/message_screen.dart';
-import 'package:tech_media/view_model/services/session_manager.dart';
+import 'package:social_media_app/res/color.dart';
+import 'package:social_media_app/view/dashboard/chat/message_screen.dart';
+import 'package:social_media_app/view_model/services/session_manager.dart';
 
 class UserListScreen extends StatefulWidget {
   const UserListScreen({Key? key}) : super(key: key);

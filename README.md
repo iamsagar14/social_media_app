@@ -1,4 +1,4 @@
-# tech_media
+# social_media_app
 
 Demo project
 A new Flutter project.

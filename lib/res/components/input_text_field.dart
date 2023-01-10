@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tech_media/res/color.dart';
+import 'package:social_media_app/res/color.dart';
 
 class InputTextField extends StatelessWidget {
   final TextEditingController myController;
@@ -27,7 +27,7 @@ class InputTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 8.0),
+      padding: const EdgeInsets.only(bottom: 12.0),
       child: TextFormField(
         controller: myController,
         focusNode: focusNode,
@@ -42,20 +42,20 @@ class InputTextField extends StatelessWidget {
         decoration: InputDecoration(
           hintText: hint,
           enabled: enable,
-          contentPadding: const EdgeInsets.all(15),
+          contentPadding: const EdgeInsets.all(17),
           hintStyle: Theme.of(context).textTheme.bodyText2!.copyWith(
               height: 0,
               color: AppColors.primaryTextTextColor.withOpacity(0.8)),
           border: const OutlineInputBorder(
-            borderSide: BorderSide(color: AppColors.textFieldDefaultFocus),
+            borderSide: BorderSide(color: AppColors.lightBlue),
             borderRadius: BorderRadius.all(
               Radius.circular(8),
             ),
           ),
           focusedBorder: const OutlineInputBorder(
-            borderSide: BorderSide(color: AppColors.secondaryColor),
+            borderSide: BorderSide(color: AppColors.lightBlue),
             borderRadius: BorderRadius.all(
-              Radius.circular(8),
+              Radius.circular(30),
             ),
           ),
           errorBorder: const OutlineInputBorder(

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tech_media/utils/routes/route_name.dart';
-import 'package:tech_media/utils/utlis.dart';
-import 'package:tech_media/view_model/signup/signup_controller.dart';
+import 'package:social_media_app/res/color.dart';
+import 'package:social_media_app/utils/routes/route_name.dart';
+import 'package:social_media_app/utils/utlis.dart';
+import 'package:social_media_app/view_model/signup/signup_controller.dart';
 
 import '../../res/components/input_text_field.dart';
 import '../../res/components/round_button.dart';
@@ -60,12 +61,18 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           style: Theme.of(context).textTheme.headline3,
                         ),
                         SizedBox(
-                          height: height * .01,
+                          height: height * .02,
                         ),
                         Text(
                           'Enter your Email address \n to register your account  ',
                           textAlign: TextAlign.center,
-                          style: Theme.of(context).textTheme.subtitle1,
+                          style: Theme.of(context)
+                              .textTheme
+                              .subtitle1!
+                              .copyWith(
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.w500,
+                                  color: AppColors.lightBlue),
                         ),
                         SizedBox(
                           height: height * .01,
@@ -83,11 +90,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   onFieldSubmittedValue: (value) {},
                                   onValidator: (value) {
                                     return value.isEmpty
-                                        ? 'enter username'
+                                        ? 'Enter username'
                                         : null;
                                   },
                                   keyBoardType: TextInputType.emailAddress,
-                                  hint: 'Enter Username',
+                                  hint: 'Enter username',
                                   obscureText: false,
                                 ),
                                 SizedBox(
@@ -101,10 +108,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                         passwordFocusNode);
                                   },
                                   onValidator: (value) {
-                                    return value.isEmpty ? 'enter email' : null;
+                                    return value.isEmpty ? 'Enter email' : null;
                                   },
                                   keyBoardType: TextInputType.emailAddress,
-                                  hint: 'Enter Email',
+                                  hint: 'Enter email',
                                   obscureText: false,
                                 ),
                                 SizedBox(
@@ -116,7 +123,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   onFieldSubmittedValue: (value) {},
                                   onValidator: (value) {
                                     return value.isEmpty
-                                        ? 'enter password  '
+                                        ? 'Enter password  '
                                         : null;
                                   },
                                   keyBoardType: TextInputType.emailAddress,
@@ -164,7 +171,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                         .textTheme
                                         .headline2!
                                         .copyWith(
-                                            fontSize: 15,
+                                            color: AppColors.lightBlue,
+                                            fontSize: 20,
                                             decoration:
                                                 TextDecoration.underline),
                                   )

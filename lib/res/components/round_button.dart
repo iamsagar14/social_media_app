@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tech_media/res/color.dart';
+import 'package:social_media_app/res/color.dart';
 
 class RoundButton extends StatelessWidget {
   final String title;
